@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300&family=Poppins&display=swap");
+
+.menu_item_wrapper{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+.menu_item_info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.menu_item_info p{
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 300;
+    color: gray;
+}
+.menu_item_wrapper img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.menu_item_info_header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #c49b63;
+}
+.menu_item_info_header h1{
+    color: #bfbfbf;
+    font-weight: 600;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    font-size: 18px;
+    z-index: 2;
+    margin-bottom: -10px;
+    background-color: rgb(19, 19, 19);
+}
+
+.menu_item_info_header p{
+    width: 55px;
+    font-family: "Poppins", Arial, sans-serif;
+    color: #c49b63;
+    text-align: right;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 300;
+    z-index: 2;
+    margin-bottom: -10px;
+    background-color: rgb(19, 19, 19);
+}
+
+
+.menu_section_wrapper{
+    display: flex;
+    flex-direction: column;
+    min-width: 540px;
+    padding: 0 15px;
+    padding-bottom: 16px;
+}
+.section_name{
+    line-height: 1.4;
+    color: #fff;
+    font-weight: 600;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 48px;
+}
+
+.all_menu_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.all_menu_wrapper{
+    padding-top: 105px;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

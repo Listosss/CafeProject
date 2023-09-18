@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300&family=Poppins&display=swap');
+
+#contacts_book_container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 296px;
+    display: flex;
+    align-items: end;
+    margin-top: -134px;
+    z-index: 2;
+}
+
+.contacts_block {
+    box-sizing: border-box;
+    width: 65%;
+    height: 162px;
+    background: #000;
+    padding: 2% 5% 2% 12%;
+
+}
+
+.contacts_block_wrapper {
+    display: flex;
+}
+
+
+.contacts_icon_text_container {
+    padding: 10px;
+    display: flex;
+    max-width: 33%;
+}
+
+.contacts_text_container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 40px);
+}
+
+.contacts_title {
+    font-family: "Josefin Sans", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.contacts_subtitle {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #808080;
+}
+
+.icon {
+    width: 40px;
+}
+
+.icon_call span::before {
+    content: url(../../../public/images/call_icon.png);
+}
+
+.icon_location span::before {
+    content: url(../../../public/images/location_icon.png);
+}
+
+.icon_clock span::before {
+    content: url(../../../public/images/clock_icon.png);
+}
+
+
+
+.book_container {
+    box-sizing: border-box;
+    display: block;
+    width: 35%;
+    height: 296px;
+    background: #c49b63;
+    padding: 24px;
+    z-index: 2;
+}
+
+.book_container_wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.book_container_wrapper h1 {
+    text-transform: uppercase;
+    color: white;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.booking_form {
+    height: 100%;
+}
+
+.booking_form div {
+    display: flex;
+    height: 33%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.booking_form div input,
+textarea {
+    border: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    font-size: 13px;
+    color: white;
+    font-family: "Poppins", Arial, sans-serif;
+    outline: none;
+}
+
+.booking_form div input::placeholder,
+textarea::placeholder {
+    font-size: 13px;
+    color: white;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.long_input {
+    width: 42%;
+    height: 58px;
+}
+
+.short_input {
+    width: 29%;
+    height: 58px;
+}
+
+::-webkit-calendar-picker-indicator {
+    color: transparent;
+    opacity: 1;
+    background: url(../../../public/images/calendar_icon.png) no-repeat center;
+    background-size: contain;
+}
+
+.submit_button {
+    background-color: white !important;
+    color: #000 !important;
+}
+
+.submit_button:hover {
+    background-color: rgb(0, 0, 0) !important;
+    color: #ffffff !important;
+}
+
+textarea {
+    box-sizing: border-box;
+}
+
+
+#success_sent_window{
+    box-sizing: border-box;
+    padding: 14px 2px;
+    position: fixed;
+    top: 50%;
+    left: 50%;   
+    background-color: rgb(240, 239, 239);
+    width: 25%; 
+    z-index: -10;
+    border: 5px solid #442d0c9d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+#success_sent_window._active{
+    z-index: 10;
+    opacity: 1;
+}  
+#success_sent_window h1{
+    text-align: center;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+#success_sent_window button{
+    width: 60%;
+    text-align: center;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color:#442d0c9d;
+    color: white;
+    height: 30px;
+    border: none;
+    margin-bottom: 8px;
+}
+
+@media all and (max-width: 1270px) {
+    .contacts_block {
+        width: 70%;
+        height: 100%;
+        z-index: 2;
+        padding: 30px;
+    }
+    #contacts_book_container {
+        margin-top: 0px;
+    }
+
+    .book_container {
+        width: 30%;
+    }
+    
+}
+@media all and (max-width: 1000px) {
+    .contacts_block {
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        padding: 30px;
+    }
+    #contacts_book_container {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .book_container {
+        height: fit-content;
+        width: 100%;
+        padding: 30px;
+    }
+    .booking_form div {
+        margin-bottom: 20px;    
+    }
+    
+}
+@media all and (max-width: 690px) {
+    .contacts_block_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts_icon_text_container {
+        max-width: 100%;
+    }  
+    
+}
+@media all and (max-width: 340px) {
+    .contacts_block_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts_icon_text_container {
+        max-width: 100%;
+    }
+    .booking_form div {
+        flex-direction: column; 
+        margin-bottom: 0;  
+    }
+    .long_input, .short_input{
+        width: 100%;
+    }
+    .booking_form div textarea{
+        margin: 15px 0;   
+    }
+}

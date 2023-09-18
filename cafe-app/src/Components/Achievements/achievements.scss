@@ -1,0 +1,98 @@
+.achievements_blocks {
+    background-image: url(../../../public/images/bg_2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.achievements_wrapper {
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.500);
+    padding: 105px 0;
+}
+
+.achievements_row {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+
+
+.achment_container {
+    font-family: "Poppins", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achment_container h1 {
+    font-weight: 300;
+    color: #c49b63;
+    font-size: 30px;
+}
+
+.achment_container p {
+    color: #bfbfbf;
+    font-size: 14px;
+}
+
+.achment_icon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+.achment_icon_square {
+    box-sizing: border-box;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #c49b63;
+    transition: all 0.3s ease;
+}
+
+.coffee_icon::before {
+    top: 0;
+    left: 0;
+    padding: 15px 15px;
+    position: absolute;
+    content: url(../../../public/images/coffee_icon_orange.png);
+    mask-repeat: no-repeat;
+}
+
+.achment_container:hover {
+    .achment_icon_square {
+        background-color: #c49b63;
+        transform: rotate(135deg);
+    }
+
+    .coffee_icon::before {
+        content: url(../../../public/images/coffee_icon_black.png);
+    }
+}
+@media all and (max-width: 1000px) {
+    .achievements_row {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        
+    }
+    .achment_container {
+        width: 40%;
+    }
+
+}
+@media all and (max-width: 760px) {
+    .achievements_row {
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 0 auto;
+    }
+
+}

@@ -1,0 +1,106 @@
+.menu_info_block{
+    display: flex;
+    padding: 105px 0;
+    margin: 0 15px;
+}
+.menu_info_text{
+    box-sizing: border-box;
+    width: 50%;   
+    padding:  0 48px 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    text-align: end;
+}
+
+.menu_info_text p{
+    margin-bottom: 24px;
+}
+.view_menu_btn {
+    padding: 16px 24px;
+}
+.orange_btn{
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #c49b63;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 13px;  
+    border: 1px solid #c49b63;
+    width: fit-content;
+    background-color: transparent;
+}
+.orange_btn:hover{
+    background-color: #c49b63;
+    color: white;
+}
+.menu_images_grid{
+    display: grid;
+    grid-template-rows: repeat(2, 254px);
+    grid-template-columns: repeat(2, 285px);
+}
+.menu_info_div{
+    width: 100%;
+    height: 100%;  
+    background-size: cover; 
+}
+.menu_image_wrapper{
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+.menu_image_wrapper_top{
+    margin-bottom: 30px;
+}
+.menu_image_wrapper_center{ 
+    margin-top: 24px;
+}
+.menu_info_div_1{
+    background-image: url(../../../public/images/menu-1.jpg);
+}
+.menu_info_div_2{
+    background-image: url(../../../public/images/menu-2.jpg);
+}
+.menu_info_div_3{
+    background-image: url(../../../public/images/menu-3.jpg);
+}
+.menu_info_div_4{
+    background-image: url(../../../public/images/menu-4.jpg);
+}
+
+
+@media  all and (max-width: 1100px){
+    .menu_images_grid{
+        grid-template-rows: repeat(2, 230px);
+        grid-template-columns: repeat(2, 261px);
+    }
+}
+@media  all and (max-width: 900px){
+    .menu_info_block{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .menu_info_text{
+        width: 85%;   
+        padding:  0 ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+@media  all and (max-width: 660px){
+    .menu_images_grid{
+        grid-template-rows: repeat(2, 214px);
+        grid-template-columns: repeat(2, 235px);
+    }
+
+}
+@media  all and (max-width: 500px){
+    .menu_images_grid{
+        grid-template-rows: repeat(2, 184px);
+        grid-template-columns: repeat(2, 205px);
+    }
+}
